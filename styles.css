@@ -1,0 +1,41 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square{
+  height: 1.5em;
+  width: 1.5em;
+  background-color: black;
+  margin: 0.5em;
+  animation: load infinite 1.5s;
+  transform: rotate(45deg);
+}
+
+.square1{
+  background: red;
+}
+
+.square2{
+  background: yellow;
+}
+
+.square3{
+  background: green;
+}
+
+@keyframes load{
+  from{
+    transform: rotate(-45deg);
+  }
+  to{
+    transform: rotate(45deg);
+  }
+}
